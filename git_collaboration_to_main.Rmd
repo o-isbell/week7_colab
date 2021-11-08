@@ -7,13 +7,15 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 Hey! 
 
 Here is the code chunck where you can work:
 ```{r}
-
+ggplot(data = cars , aes( y = dist , x = speed)) + 
+  geom_point()
 ```
 
 Here is the code chunck where I will work:
